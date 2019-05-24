@@ -1,0 +1,9 @@
+#divcss5{ margin:10px auto} 
+#divcss5 img{ border-radius:50%}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} 
+
