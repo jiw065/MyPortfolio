@@ -42,3 +42,19 @@
     bottom: 10px;
     left: 90%;
 }
+
+.project-left{
+	width: 40%;
+	padding: 10px;
+}
+
+.project-right{
+	width: 60%;
+	padding: 10px;
+	position: relative;
+	left: 40%;
+	bottom: 120px;
+}
+.project{
+	width: 100%;
+}
