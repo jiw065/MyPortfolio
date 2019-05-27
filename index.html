@@ -134,14 +134,14 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-archive fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
         <div class="w3-container moreBox">
           <h5 class="w3-opacity"><b>PL/SQL</b></h5>
-          <img src="image/Oracle-4.png" style="width:75%;height:75%;" alt="PL/SQL">
+          <img src="image/Oracle-4.png" style="width:75%;height:75%;" onclick="onClick(this)"  alt="PL/SQL">
           <h6 class="w3-text-teal"><a href="https://github.com/jiw065/plsql" target="_blank">Github</a></h6>
           <p>This project includes my PL/SQL study notes, PL/SQL practice program and SQL practice scripts,please look at github link above for detailed information</p>
           <hr>
         </div>
         <div class="w3-container moreBox">
           <h5 class="w3-opacity"><b>Multithread Server-Client Chatting</b></h5>
-          <img src="image/java_multithread.PNG" style="width:75%;height:75%;" alt="Java Chatting">
+          <img src="image/java_multithread.PNG" style="width:75%;height:75%;" onclick="onClick(this)" alt="Java Chatting">
           <h6 class="w3-text-teal"><a href="https://github.com/jiw065/onLineChat-desktop" target="_blank">Github</a></h6>
           <p>A Java P2P LAN chatting system<br>
              Knowledge points:Java Socket Programming, Multi-threads, Exception handling, Data Structure
@@ -150,7 +150,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </div>
         <div class="w3-container moreBox" style="display: none;">
           <h5 class="w3-opacity"><b>Solar System Model</b></h5>
-          <img src="image/solar-system.PNG" style="width:75%;height:75%;" alt="Solar System Model">
+          <img src="image/solar-system.PNG" style="width:75%;height:75%;" onclick="onClick(this)" alt="Solar System Model">
           <h6 class="w3-text-teal"><a href="https://github.com/jiw065/Solar-System" target="_blank">Github</a></h6>
           <p>This is a simple solar system simulator written in Java<br>
              press 'SPACE' to pause/resume animation.<br>
@@ -159,8 +159,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </div>
         <div class="w3-container moreBox" style="display: none;">
           <h5 class="w3-opacity"><b>Plane Game</b></h5>
-          <img src="image/plane-2.PNG" style="width:50%;height:50%;" alt="Solar System Model">
-          <img src="image/plane-1.PNG" style="width:50%;height:50%;" alt="Solar System Model">
+          <img src="image/plane-2.PNG" style="width:50%;height:50%;" onclick="onClick(this)" alt="Solar System Model">
+          <img src="image/plane-1.PNG" style="width:50%;height:50%;" onclick="onClick(this)" alt="Solar System Model">
           <h6 class="w3-text-teal"><a href="https://github.com/jiw065/PlaneGame" target="_blank">Github</a></h6>
           <p>This is a simple game written in Java<br>
              press 'UP', 'DOWN', 'LEFT', 'RIGHT' button to control the plane move<br>
@@ -184,7 +184,14 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
      
     <!-- End Right Column -->
     </div>
-    
+      <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0;" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
   <!-- End Grid -->
   </div>
   
